@@ -41,3 +41,6 @@ app.use('/posts', PostRoute)
 app.use('/upload', UploadRoute)
 app.use('/chat', ChatRoute)
 app.use('/message', MessageRoute)
+app.use('/',(req,res)=>{
+  res.send("Welcome Lalit your project has deployed on heroku")
+})
